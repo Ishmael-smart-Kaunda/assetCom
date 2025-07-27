@@ -1,0 +1,424 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{   
+    width: 100%;
+    margin: auto;
+    
+}
+header{ 
+    width: 100%;
+}
+.quickAcess{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: hsl(36, 92%, 51%);
+    color: hsl(0,0%, 100%);
+    font-weight: 500;
+    
+}
+.phone, .email{
+    display: inline-flex;
+    align-items: center;
+    
+}
+.phone>img, .email>img{
+    width: 20px;
+    height: 20px; 
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0) invert(1); 
+}
+.phone>img, .phone>p .email>img, .email>p{
+    margin: 5px;
+}
+socialIcons{
+    
+    display: inlie-blck;display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.socialIcons> img{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0) invert(1);
+    
+}
+
+.home{
+    background-image: url(valuation2.png);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+.logo-Nav{
+    width: 100%;
+    color: hsl(0, 0%,0%);
+    margin: auto;
+    padding: 5px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;   
+}
+.logo{
+    width: 10px;
+    height: 10px;  
+}
+
+.logo, img{
+ width: 30%;
+ height: 30%;
+ object-fit: cover;
+
+}
+.menu{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-right:10px;
+
+}
+.getInTouch{
+    background-color: rgb(9, 24, 58);
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+.getInTouch:hover{
+    background-color: hsl(36, 92%, 51%);
+ 
+}
+
+.menuLabel{
+    
+    position: relative;
+    width: 20%;
+    
+}
+.menu-button{
+    border-style: none;
+    background-color: hsl(231, 65%, 30%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600; 
+    padding: 4px;  
+    margin: 5px;
+}
+.menuLabel{
+    display: none;
+    
+}
+
+.menu-button:hover{
+    color:hsl(36, 92%, 51%);
+}
+.menuList{
+    position: absolute;
+    left: -115px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-top: 1px solid white;
+    
+}
+.menuList>a{
+    background-color: hsl(231, 65%, 30%);
+    border-bottom: 1px solid white;
+}
+.menuList>a:hover{
+    background-color: hsl(36, 92%, 51%);
+    
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600; 
+    padding: 5px;  
+}
+
+@media screen and (max-width: 780px){
+    .menuLabel{
+     display: block;
+     margin: auto 10px;
+    }
+    .menu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1000px){
+    .menuLabel{
+     display: block;
+     margin: auto 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .whoAreWe{
+        display: none;
+    }
+}
+.menu> a:hover{
+    
+    color: hsl(36, 92%, 51%);
+    
+    
+}
+.currentProjects{   
+    
+    
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    
+    
+}
+.whoAreWe{
+    max-width: 25%;
+    grid-column: 1;
+    grid-row: 2;  
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:hsl(0,0%,100%);
+    background-color: hsl(36, 92%, 51%);
+    opacity: 80%;
+    font-weight: 500;
+    font-family: sans-serif;
+    
+    
+} 
+
+.whoAreWe> h3{
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(9, 24, 58);
+}
+.whoAreWe> h4{
+    font-weight: 450;
+}
+.whoAreWe> p{
+    text-align: justify;
+    font-size: 13px;
+}
+leftBtn> button{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.projectTitle{
+    grid-column: 2;
+    grid-row: 1;
+    color: hsl(36, 92%, 51%);  
+    justify-items: center;  
+}
+.projectPhoto{
+    grid-column: 2;
+    grid-row: 2;
+    
+    justify-items: center;
+}
+.rightBtn{
+    grid-column: 3;
+    grid-row: 2;    
+    position: relative;
+}
+.rightBtn> button{
+    position: absolute;
+    top: 45%;
+    right: 20%;
+}
+.sectionTitle{
+    width: fit-content;
+    padding: 5px;
+    margin: 15px auto;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: hsl(36, 92%, 51%);
+}
+.services{    
+    width: 100%;   
+    margin: 10px auto;
+    
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 5px;
+    
+    
+}
+
+#service{
+   
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow:  0 0 4px hsl(0, 0%, 80%);
+
+}
+#service-imgContainer{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.serviceNote{
+    
+    background-color:  hsl(36, 92%, 51%); 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: hsl(0,0%, 100%);
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .serviceNote:hover{
+      opacity: 0.8;
+  }
+  .serviceNote> a{
+    cursor: default;
+  }
+.valuationImg{
+    background-image: url(valuation2.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.developmentImg{
+    background-image: url(development2.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.portfolioImg{
+    background-image: url(portfolio.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.designImg{
+    background-image: url(design3.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.LandSurveyingImg{
+    background-image: url(land-survey.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.auctioningImg{
+    background-image: url(auctioning.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.administrationImg{
+    background-image: url(land-administration.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.consultingImg{
+    background-image: url(consultancy.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.ourCompany{
+    background-color: red;
+    border: 1px soild black;
+    margin: auto;
+    display: grid;
+    grid-column: 300px 300px 300px;
+}
+.vissionMission{
+    width: 200px;
+}
+.contactUs{
+    background-color: beige;
+}
+.findUs{
+    background-color: brown;
+}
+mission{
+    background-color: lightcoral;
+}
+vision{
+    background-color: lightgray;
+}
+footer{
+    background-color: rgb(9, 24, 58);
+    width: 100%;
+    color: hsl(221, 51%, 100%);
+    font-family: Georgia;
+    font-weight: 500;
+   /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 5px; */
+    
+}
+.clientela{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.footeritem{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.footeritem> img{ 
+    width: 100%;
+    height: auto;
+
+}
+.footeritem> img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.clients{
+    font-weight: 700;
+}
+.clients, .copyRight{
+width: fit-content;
+margin: 5px auto;
+}

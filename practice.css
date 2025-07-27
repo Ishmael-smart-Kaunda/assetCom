@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#signIn{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    background:linear-gradient(to bottom, rgb(147, 141, 240), rgb(151, 18, 195) ) ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    border-radius: 5px;
+}
+.dark-theme{
+    background-color: hsl(0, 0%, 15%);
+}
+.light-theme{
+    background-color: hsl(10, 80%, 70%);
+}
+h1{
+    text-align: center;
+   
+    padding-bottom: 3px;
+    width: 100%;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin: auto;
+    border: none;
+
+}
+label{
+    margin-bottom: 5px;
+    font-weight: 450;
+}
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input:focus{
+    
+    outline: none;
+}
+.signIn-cancelBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.signIn-cancelBtn>button{
+    padding: 5px;
+    width: 46%;
+    border-radius: 5px;
+    background-color: hsl(36, 92%, 51%);
+    outline-offset: 0;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+h3{
+    width: 100%;
+    height: 40px;
+    border: 2px solid grey;
+    font-size: 18x;
+    font-weight: 500;
+    border-radius: 5px;
+   
+    text-align: center;
+}
+.lineThrough{
+    
+    color: hsl(111, 80%, 30%);
+    list-style-type: circle;
+    list-style-type: symbols(tick);
+}
+.taskContainer{
+    
+    border: 1px solid white;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  
+    width:60%;
+}
+placeholder{
+    color: red;
+}

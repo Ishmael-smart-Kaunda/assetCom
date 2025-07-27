@@ -1,0 +1,240 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{   
+    width: 100%;
+    margin: auto;
+    
+}
+header{ 
+    width: 100%;
+}
+.quickAcess{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: hsl(36, 92%, 51%);
+    color: hsl(0,0%, 100%);
+    font-weight: 500;
+    
+}
+.phone, .email{
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.phone>img, .email>img{
+    width: 20px;
+    height: 20px; 
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0) invert(1); 
+}
+.phone>img, .phone>p .email>img, .email>p{
+    margin: 5px;
+}
+.socialIcons{
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.socialIcons> img{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0) invert(1);
+    
+}
+.socialIcons> img:hover{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.logo-Nav{
+    width: 100%;
+    color: hsl(231, 65%,30%);
+    margin: auto;
+    padding: 5px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;   
+}
+.logo{
+    width: 13%;
+    height:auto ;  
+   
+    background-position: cover;
+    
+}
+
+.logo> img{
+ width: 100%;
+ height: auto;
+ 
+
+}
+.menu{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-right:10px;
+    
+}
+.getInTouch{
+    background-color: hsl(36, 92%, 51%); 
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 8px;
+    
+}
+.getInTouch:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 65%, 30%);
+
+}
+.menuLabel{
+    display: none;
+}
+.menuContainer{
+    background-color: hsl(231, 65%, 30%);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color:  hsl(0, 0%, 100%);
+    font-weight: 600; 
+    padding: 5px;  
+}
+a:hover{
+    color: hsl(36, 92%, 51%);
+    
+}
+.services-title{
+    width: fit-content;
+    margin: 15px auto;
+    padding: 5px;
+    font-weight: 800;
+    background: linear-gradient(to right, hsl(231, 65%, 30%), hsl(300, 65%, 30%));
+    background-clip: text;
+    border-bottom: 1px solid hsl(36, 92%, 51%);
+    font-size: 18px;
+    color: transparent
+}
+.services{    
+    width: 100%;   
+    margin: 10px auto;
+    
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 5px;
+    z-index: -1;
+    
+}
+
+#service{
+   
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 30% 7% 53%;
+    height: 700px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow:  0 0 4px hsl(0, 0%, 80%);
+
+}
+#service-imgContainer{
+   margin: 10px; 
+   clip-path: circle();
+
+}
+
+.serviceNote{
+    
+    background: linear-gradient(to right, hsl(231, 65%, 30%), hsl(300, 65%, 30%));
+    color: hsl(0,0%, 100%);
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+.serviceInfo{
+    text-align: justify;
+    padding: 10px;
+   
+}
+b{
+    color: hsl(231, 65%, 30%);
+    font-weight: 500;
+}
+.valuationImg{
+    background-image: url(valuation2.png);
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+.developmentImg{
+    background-image: url(development2.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.portfolioImg{
+    background-image: url(portfolio.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.designImg{
+    background-image: url(design3.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.LandSurveyingImg{
+    background-image: url(land-survey.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.auctioningImg{
+    background-image: url(auctioning.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.administrationImg{
+    background-image: url(land-administration.png);
+    background-position: center;
+    background-size: cover;
+    
+}
